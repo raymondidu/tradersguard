@@ -1,10 +1,36 @@
 import Image from "next/image";
 import Link from "next/link";
 
+
+
+const howitworksvalues =[
+  {id: 1, title:"Connect Wallet", 
+  description:"Securely connect your wallet to get started. No custody. No stress.",
+  icon:"/link.png"
+},
+ {id: 2, title:"Set Capital Coverage", 
+  description:"Select how much USDC you want protected, and track it in real time.",
+  icon:"/graph.png"
+},
+ {id: 3, title:"Pay When You Profit", 
+  description:"Only pay a small % (1–5%) of your profits as premium after winning trades.",
+  icon:"/sparkles.png"
+},
+ {id: 4, title:"Earn Protection", 
+  description:"As you contribute, you build protection. Reach 50% of your Earned Protection Threshold (EPT) or stay active for 30 days to become eligible.",
+  icon:"/money-recive.png"
+},
+ {id: 5, title:"Claim After Catastrophic Loss", 
+  description:"If your portfolio crashes 80% or more, you can submit a claim and receive fresh capital to start over.",
+  icon:"/smiley.png"
+},
+]
+
 export default function Home() {
   return (
 
-       <div className=" min-h-screen p-4 pb-20">
+       <div className=" w-full">
+        <div className="mb-10 p-4">
                     <div className="flex justify-between items-start">
                                   <svg className="w-[83px] h-[41.904px] lg:w-[191px] lg:h-[96.43px] " xmlns="http://www.w3.org/2000/svg" width="191" height="97" viewBox="0 0 191 97" fill="none">
                             <path d="M162.776 15.9933C162.776 14.3563 164.105 13.0266 165.745 13.0266H176.077V18.8833H165.898C165.898 18.8833 168.63 19.7199 168.63 22.6718V27.5531H162.776V19.6004C162.776 19.2034 162.455 18.8833 162.059 18.8833H154.112C154.112 18.8833 157.079 19.1137 157.079 22.9044V27.5509H151.303V18.8833H143.78V13.0266H158.381C161.408 13.0266 162.438 15.8204 162.509 15.9143C162.59 16.0253 162.66 15.9976 162.78 15.9933H162.776Z" fill="#52D591"/>
@@ -43,7 +69,7 @@ export default function Home() {
 
                     <h1 className="rounded outline p-4 mb-10">CA:</h1>
 
-                <div className="flex justify-center mb-10">
+                <div className="flex justify-center">
                       <Link href="https://forms.gle/jp7V6zFA3WDXeij57">
                       <button className="bg-[#52D591] h-10 p-2 rounded text-[#1B4134] font-bold ">
                         Join the Waitlist
@@ -51,7 +77,39 @@ export default function Home() {
                       </Link>
                 </div>
 
-                    <Image 
+                   
+
+
+
+
+    </div>
+    <div className="bg-[#F4FFF9] w-full text-center p-4 py-10">
+      <h1 className=" text-[#1E1E1E] font-bold text-2xl lg:text-4xl">How it Works</h1>
+      <p className="text-[#5D706A] py-5">Here is how it works in few simple steps.</p>
+
+    
+      <div  className=" lg:grid lg:grid-cols-2 w-full ">
+          {howitworksvalues.map((works, index) =>
+        <div key={index} className="bg-[#fff] h-[129px] w-[400px] lg:w-[500px] rounded-2xl flex mb-2 ">
+        <div className="relative bg-[#1B4134] h-[129px] w-[104px] flex justify-center items-center rounded-l-2xl">
+          <img src={works.icon} alt="link" />
+
+        </div>
+        <div className=" p-4 text-left w-[296px] lg:w-full">
+          <h1 className="text-[#1B4134] font-bold text-x" >{works.id}. {works.title}</h1>
+          <p className=" text-sm w-full text-[#5D706A]">{works.description}</p>
+          
+        </div>
+
+      </div>
+     
+      
+      )}
+       </div>
+
+    </div>
+
+     <Image 
                     className="w-full"
                     width={816}
                     height={372}
@@ -59,11 +117,7 @@ export default function Home() {
                     alt="TradeGuard is coming soon"
                     priority
                     />
-
-
-
-
-    </div>
+       </div>
     
   );
 }
