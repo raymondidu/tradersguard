@@ -88,7 +88,7 @@ export default function Home() {
       <p className="text-[#5D706A] py-5">Here is how it works in few simple steps.</p>
 
     
-      <div  className=" lg:grid lg:grid-cols-2 ">
+      <div  className=" lg:grid  lg:grid-cols-2 gap-4 max-w-5xl mx-auto">
           {howitworksvalues.map((works, index) =>
         <div key={index} className="bg-[#fff] h-[129px] w-full lg:w-[500px] rounded-2xl flex mb-2 ">
         <div className="relative bg-[#1B4134] h-[129px] w-[84px] flex justify-center items-center rounded-l-2xl">
