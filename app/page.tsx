@@ -97,7 +97,7 @@ export default function Home() {
         </div>
         <div className=" p-4 text-left w-[296px] lg:w-full">
           <h1 className="text-[#1B4134] font-bold text-x" >{works.id}. {works.title}</h1>
-          <p className=" text-sm w-full text-[#5D706A]">{works.description}</p>
+          <p className=" text-[12px] lg:text-lg w-full text-[#5D706A]">{works.description}</p>
           
         </div>
 
