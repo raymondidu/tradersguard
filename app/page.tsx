@@ -88,16 +88,16 @@ export default function Home() {
       <p className="text-[#5D706A] py-5">Here is how it works in few simple steps.</p>
 
     
-      <div  className=" lg:grid lg:grid-cols-2 w-full ">
+      <div  className=" lg:grid lg:grid-cols-2 ">
           {howitworksvalues.map((works, index) =>
         <div key={index} className="bg-[#fff] h-[129px] w-full lg:w-[500px] rounded-2xl flex mb-2 ">
-        <div className="relative bg-[#1B4134] h-[129px] w-[104px] flex justify-center items-center rounded-l-2xl">
+        <div className="relative bg-[#1B4134] h-[129px] w-[84px] flex justify-center items-center rounded-l-2xl">
           <img src={works.icon} alt="link" />
 
         </div>
         <div className=" p-4 text-left w-[296px] lg:w-full">
           <h1 className="text-[#1B4134] font-bold text-x" >{works.id}. {works.title}</h1>
-          <p className=" text-[12px] lg:text-lg w-full text-[#5D706A]">{works.description}</p>
+          <p className=" text-[14px] lg:text-lg w-full text-[#5D706A]">{works.description}</p>
           
         </div>
 
