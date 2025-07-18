@@ -90,7 +90,7 @@ export default function Home() {
     
       <div  className=" lg:grid lg:grid-cols-2 w-full ">
           {howitworksvalues.map((works, index) =>
-        <div key={index} className="bg-[#fff] h-[129px] w-[400px] lg:w-[500px] rounded-2xl flex mb-2 ">
+        <div key={index} className="bg-[#fff] h-[129px] w-full lg:w-[500px] rounded-2xl flex mb-2 ">
         <div className="relative bg-[#1B4134] h-[129px] w-[104px] flex justify-center items-center rounded-l-2xl">
           <img src={works.icon} alt="link" />
 
