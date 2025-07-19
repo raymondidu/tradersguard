@@ -67,7 +67,7 @@ export default function Home() {
                     
                     </div> <p className="py-10 text-center text-[#5D706A] font-[400] text-lg">Decentralized trade insurance for crypto & meme coin traders</p>
 
-                    <h1 className="rounded outline p-4 mb-10">CA:</h1>
+                    <h1 className="rounded outline p-4 mb-10 text-[12px] font-bold lg:text-2xl">CA: 8SXQKLi8xBi2tpAGyiAuGXMwJ9kTgTyDhnxwbwEcmoon</h1>
 
                 <div className="flex justify-center">
                       <Link href="https://forms.gle/jp7V6zFA3WDXeij57">
